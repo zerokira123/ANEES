@@ -1,161 +1,111 @@
 baseurl = "http://www.example.com"
-title = "ANEES"
-
-theme = "hugo-coder"
-
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-paginate = 20
 canonifyurls = true
-
-pygmentsstyle = "b2"
+defaultcontentlanguage = "en"
+disqusShortname = "yourdiscussshortname"
+languagecode = "en"
+paginate = 20
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
-
+pygmentsstyle = "b2"
+theme = "hugo-coder"
+title = "ANEES"
+[languages.en]
+languagename = "English"
+[[languages.en.menu.main]]
+name = "About"
+url = "about/"
+weight = 1
+[[languages.en.menu.main]]
+name = "Blog"
+url = "posts/"
+weight = 2
+[[languages.en.menu.main]]
+name = "Projects"
+url = "projects/"
+weight = 3
+[[languages.en.menu.main]]
+name = "Contact me"
+url = "contact/"
+weight = 5
+[languages.pt-br]
+languagename = "日本語"
+title = "アニース　ムハンマド"
+[[languages.pt-br.menu.main]]
+name = "私について"
+url = "about/"
+weight = 1
+[[languages.pt-br.menu.main]]
+name = "ブログ"
+url = "posts/"
+weight = 2
+[[languages.pt-br.menu.main]]
+name = "プロジェクト"
+url = "projects/"
+weight = 3
+[[languages.pt-br.menu.main]]
+name = "連絡先"
+url = "contact/"
+weight = 5
+[languages.pt-br.params]
+author = "アニース"
+description = ""
+footercontent = "ソーシャルアプリで私に従ってください"
+info = "プログランミングヌーブです"
+keywords = "blog,desenvolvedor,pessoal"
 [params]
-    author = "ANEES MOHAMED"
-    description = "ANEES MOHAMED's personal website"
-    keywords = "developer,personal,entertainment lover"
-    info = "A PROGRAMMING NOOB"
-    avatarurl = "images/avatar.jpg"
-    #gravatar = "john.doe@example.com"
-    footercontent = "FOLLOW ME ON SOCIAL APPS"
-
-    dateformat = "January 2, 2020"
-
-    hideFooter = false
-    hideCredits = false
-    hideCopyright = false
-    since = 2019
-
-    # Git Commit in Footer, uncomment the line below to enable it.
-    #commit = "https://github.com/luizdepra/hugo-coder/tree/"
-
-    rtl = false
-
-    # Specify light/dark colorscheme
-    # Supported values:
-    # "auto" (use preference set by browser)
-    # "dark" (dark background, light foreground)
-    # "light" (light background, dark foreground) (default)
-    colorscheme = "dark"
-
-    # Series see also post count
-    maxSeeAlsoItems = 5
-
-    # Enable Twemoji
-    enableTwemoji = true
-
-    # Custom CSS
-    custom_css = []
-
-    # Custom JS
-    custom_js = []
-
- #If you want to use fathom(https://usefathom.com) for analytics, add this section
+author = "ANEES MOHAMED"
+avatarurl = "images/avatar.jpg"
+colorscheme = "dark"
+custom_css = []
+custom_js = []
+dateformat = "January 2, 2020"
+description = "ANEES MOHAMED's personal website"
+enableTwemoji = true
+footercontent = "FOLLOW ME ON SOCIAL APPS"
+hideCopyright = false
+hideCredits = false
+hideFooter = false
+info = "A PROGRAMMING NOOB"
+keywords = "developer,personal,entertainment lover"
+maxSeeAlsoItems = 5
+rtl = false
+since = 2019
 [params.fathomAnalytics]
-    siteID = "ABCDE"
-    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-    serverURL = "analytics.example.com"
-
+serverURL = "analytics.example.com"
+siteID = "ABCDE"
+[[params.social]]
+icon = "fab fa-github"
+name = "Github"
+url = "https://github.com/zerokira123"
+weight = 1
+[[params.social]]
+icon = "fab fa-gitlab"
+name = "Gitlab"
+url = "https://github.com/zerokira123"
+weight = 2
+[[params.social]]
+icon = "fab fa-twitter"
+name = "Twitter"
+url = "https://twitter.com/Anees__MD"
+weight = 3
+[[params.social]]
+icon = "fab fa-linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/anees-mohamed-3a966b16a/"
+weight = 4
+[[params.social]]
+icon = "fab fa-medium"
+name = "Medium"
+url = "#"
+weight = 5
+[[params.social]]
+icon = "fas fa-rss"
+name = "RSS"
+rel = "alternate"
+type = "application/rss+xml"
+url = "#"
+weight = 6
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/zerokira123"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab"
-    weight = 2
-    url = "https://github.com/zerokira123"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/Anees__MD"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin"
-    weight = 4
-    url = "https://www.linkedin.com/in/anees-mohamed-3a966b16a/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
-    weight = 5
-    url = "#"
-[[params.social]]
-    name = "RSS"
-    icon = "fas fa-rss"
-    weight = 6
-    url = "#"
-    rel = "alternate"
-    type = "application/rss+xml"
-
-
-[languages]
-    [languages.en]
-        languagename = "English"
-
-        [languages.en.menu]
-
-            [[languages.en.menu.main]]
-            name = "About"
-            weight = 1
-            url = "about/"
-
-            [[languages.en.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
-
-            [[languages.en.menu.main]]
-            name = "Projects"
-            weight = 3
-            url = "projects/"
-
-            [[languages.en.menu.main]]
-            name = "Contact me"
-            weight = 5
-            url = "contact/"
-
-
-    [languages.pt-br]
-        languagename = "日本語"
-        title = "アニース　ムハンマド"
-
-        [languages.pt-br.params]
-            author = "アニース"
-            info = "プログランミングヌーブです"
-            description = ""
-            keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "ソーシャルアプリで私に従ってください"
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "私について"
-            weight = 1
-            url = "about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "ブログ"
-            weight = 2
-            url = "posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "プロジェクト"
-            weight = 3
-            url = "projects/"
-
-            [[languages.pt-br.menu.main]]
-            name = "連絡先"
-            weight = 5
-            url = "contact/"
+category = "categories"
+series = "series"
+tag = "tags"

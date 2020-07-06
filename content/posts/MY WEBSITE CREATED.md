@@ -1,6 +1,6 @@
 ---
 title: MY WEBSITE CREATED
-date: 2020-07-03T07:30:00+00:00
+date: 2020-07-02T07:30:00+00:00
 draft: true
 
 ---
